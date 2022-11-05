@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学校简介</title>
+</head>
+<body>
+    <article id="main">
+        <h1 class="text">校风校训</h1>
+        <div class="div_plus">
+            <div class="div-x">
+                <div class="text-1">校训:</div>
+                <div class="text-1">校风:</div>
+                <div class="text-1">教风:</div>
+                <div class="text-1">学风:</div>
+            </div>
+            <div class="div-y">
+                <div class="x1">
+                    <dd>厚德</dd>
+                    <dd>博学</dd>
+                    <dd>广才</dd>
+                    <dd>精业</dd>
+                </div>
+                <div class="x2">
+                    <dd>文明</dd>
+                    <dd>和谐</dd>
+                    <dd>求实</dd>
+                    <dd>创新</dd>
+                </div>
+                <div class="x3">
+                    <dd></dd>
+                    <dd>立崇高师德</dd>
+                    <dd>精专业技能</dd>
+                    <dd>勤传道授业</dd>
+                    <dd>善教书育人</dd>
+                </div>
+                <div class="x4">
+                    <dd></dd>
+                    <dd>立志立德</dd>
+                    <dd>至诚至信</dd>
+                    <dd>勤学勤思</dd>
+                    <dd>求实求新</dd>
+                </div>
+            </div>   
+        </div>
+    </article> 
+</body>
+<style>
+    .text{
+        height: 50px;
+        border-bottom: 2px solid ;
+        font-size: 30px;
+        color: rgb(168, 108, 225);
+    }
+    #main{
+        width: 848px;
+        height: auto;
+        margin: 10px auto;
+        z-index: -999;
+    }
+    /* 背景 */
+    .div_plus{
+        margin-top: 18px;
+        height: 878px;
+        background-image: url(image/yunduo.png),url(image/dm.png),url(image/tsg.png);
+        background-repeat: no-repeat;
+        background-position: right 49px,left top,bottom;
+        z-index: -998;
+        position: relative;
+        z-index: 1;
+    }
+    /* 覆盖元素 */
+    .div-x{
+        position: absolute;
+        top: 18px;
+        left: 60px;
+        z-index: 3;
+        pointer-events: none;
+    }
+    /* 动画伸出条 */
+    .div-y{
+        position: absolute;
+        top: 52px;
+        left: 75px; 
+        z-index: 2;
+    }
+    .text-1{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(20, 29, 55);
+        line-height: 105px;
+        text-align: center;
+        background-color: rgb(155, 155, 229); 
+        margin-top: 18px;
+        /* pointer-events: none; */
+    }
+    /* 拉伸条部分 */
+    .x1{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        line-height: 70px;
+        text-align: center;
+        background-color: antiquewhite; 
+        transition: 1.2s;
+    }
+    .x1:hover {
+        position: relative;
+        transition: 2s;
+        width: 600px;
+    }
+    .x1 dd{
+        display: none;
+    }
+    .x1:hover dd{
+        animation: 3s fade;
+        display: inline-block;
+    }
+    .x2{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        line-height: 70px;
+        text-align: center;
+        background-color: antiquewhite; 
+        margin-top: 48px;
+        transition: 1.2s;
+    }
+    .x2:hover {
+        position: relative;
+        transition: 2s;
+        width: 600px;
+    }
+    .x2 dd{
+        display: none;
+    }
+    .x2:hover dd{
+        animation: 3s fade;
+        display: inline-block;
+    }
+    .x3{
+        width: 70px;
+        height: 70px;
+        font-size: 18px;
+        line-height: 70px;
+        text-align: center;
+        background-color: antiquewhite; 
+        margin-top: 48px;
+        transition: 1.2s;
+    }
+    .x3:hover {
+        position: relative;
+        transition: 2s;
+        width: 650px;
+    }
+    .x3 dd{
+        display: none;
+    }
+    .x3:hover dd{
+        animation: 3s fade-s;
+        display: inline-block;
+    }
+    .x4{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        line-height: 70px;
+        text-align: center;
+        background-color: antiquewhite; 
+        margin-top: 48px;
+        transition: 1.2s;
+    }
+    .x4:hover {
+        position: relative;
+        transition: 2s;
+        width: 650px;
+    }
+    .x4 dd{
+        display: none;
+    }
+    .x4:hover dd{
+        animation: 3s fade-s;
+        display: inline-block;
+    }
+    /* 文字渐变显示 */
+    @keyframes fade{
+        0%{opacity: 0;}
+        25%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @keyframes fade-s{
+        0%{opacity: 0;}
+        38%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+</style>
+</html>
